@@ -39,7 +39,7 @@ public class ShippingPackagingSlipService implements OrderProcessingService {
 	
 	@Override
 	public boolean isSupportedServive(ProductType productType) {
-		return productType.equals(ProductType.PHYSICAL) || productType.equals(ProductType.BOOK);
+		return productType.equals(ProductType.PHYSICAL);
 	}
 
 }
