@@ -7,14 +7,13 @@ import com.ops.businessrule.model.Order;
 import com.ops.businessrule.model.ProductType;
 import com.ops.businessrule.service.AddressService;
 import com.ops.businessrule.service.CustomerService;
-import com.ops.businessrule.service.OrderProcessingService;
 
 /**
  * Royalty Packaging slip service handles generating the packaging slip and sends to shipment & Royalty
  * @author Vishnu K N
  *
  */
-public class RoyaltyPackagingSlipService extends ShippingPackagingSlipService implements OrderProcessingService {
+public class RoyaltyPackagingSlipService extends ShippingPackagingSlipService {
 	
 	public RoyaltyPackagingSlipService(AddressService addressService, CustomerService customerService) {
 		super(addressService, customerService);
